@@ -19,6 +19,11 @@ body{
     margin-right: 65%;
 }
 
+.tt{
+  color: aliceblue;
+  margin-right: 30%;
+}
+
 * {
     scrollbar-width: thin;
     scrollbar-color: #97CECE #DFE9EB;
