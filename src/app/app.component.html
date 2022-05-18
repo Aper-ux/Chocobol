@@ -1,18 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <div>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample">
         <img src="https://cdn-icons-png.flaticon.com/512/3465/3465221.png" alt="" width="32" height="28">
       </a>
     </div>
-    <a class="navbar-brand" href="#">Chocobol</a>
+    <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample">Chocobol</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="home">Home</a>
+          <a class="nav-link" aria-current="page" href="home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="prods">Productos</a>
@@ -32,7 +32,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="btn btn-danger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="margin-left: 100%;">
+          <a class="btn btn-danger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
             <i class="fas fa-plus"></i>
           </a>
         </li>
@@ -45,14 +45,19 @@
   </div>
 </nav>
 
-<router-outlet></router-outlet>
-<app-home></app-home>
-
+<article style="margin:4%">
+  <router-outlet></router-outlet>
+</article>
+<article style="margin:5%">
+  <!-- <app-home></app-home> -->
+</article>
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: black; color: aliceblue;">
   <div class="offcanvas-header">
     <img src="https://cdn-icons-png.flaticon.com/512/3465/3465221.png" alt="" width="50" height="40">
     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Chocobol</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
   </div>
   <div class="offcanvas-body">
     <div>
