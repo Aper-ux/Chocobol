@@ -24,6 +24,11 @@ body{
   margin-right: 30%;
 }
 
+.foot{
+  color: aliceblue;
+  background-color: #000000;
+  text-align: center;
+}
 * {
     scrollbar-width: thin;
     scrollbar-color: #97CECE #DFE9EB;
